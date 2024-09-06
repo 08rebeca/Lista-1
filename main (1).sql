@@ -109,21 +109,4 @@ SUM(order_items.quantity) AS total_sold
 FROM order_items
 JOIN products ON order_items.product_id = products.product_id
 GROUP BY products.product_name
-ORDER BY total_sold ASC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ORDER BY total_sold ASC;
